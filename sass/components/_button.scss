@@ -9,10 +9,10 @@
         border-radius: 10rem;
         transition: all .2s;
         position: relative;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
     }
     &:hover{
-        transform: translateY(.3rem);
+        transform: translateY(-.3rem);
         box-shadow: 0 1rem 2rem rgba($color-black, .25);
         &::after{
             transform: scaleX(1.4) scaleY(1.7);
@@ -20,7 +20,7 @@
         }
     }
     &:active{
-        transform: translateY(-.1rem);
+        transform: translateY(.1rem);
         box-shadow: 0 0.4rem 1rem rgba($color-black, .25) ;   
     }
     &::after{
@@ -45,5 +45,31 @@
     &--animated{
         animation: moveInTop 1s ease-out 0.7s;
         animation-fill-mode: backwards; /*applies animation start point styles immediatelly even before delay*/
+    }
+}
+
+.btn-text{
+    &:link,
+    &:visited{
+        font-size: $default-font-size;
+        color: $color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+
+        transition: all .2s;
+    }
+
+    &:hover{
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black,.15);
+        transform: translateY(-2px);
+    }
+
+    &:active{
+        box-shadow: 0 .5rem 2rem rgba($color-black,.15);
+        transform: translateY(0);
     }
 }
