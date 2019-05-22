@@ -42,6 +42,19 @@
             z-index: -1;
         }
     }
+
+    &--green{
+        background-color: $color-primary;
+        color: $color-white;
+        &::after{
+            background-color: $color-primary;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    
     &--animated{
         animation: moveInTop 1s ease-out 0.7s;
         animation-fill-mode: backwards; /*applies animation start point styles immediatelly even before delay*/
