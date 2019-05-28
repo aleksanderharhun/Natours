@@ -83,8 +83,8 @@
                         <div class="feature-box">
                             <i class="feature-box__icon icon-basic-world"></i>
                             <h3 class="heading-tertiary u-margin-bottom-small">Explore the world</h3>
-                            <p class="feature-box__text">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium nesciunt, error architecto qui,vitae. Veniam sit ipsam magni voluptate?
+                            <p class="feature-box__text">                            
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis velit tincidunt hendrerit. Vestibulum ultricies est a diam gravida, nec bibendum dui pellentesque.  
                             </p>
                         </div>                        
                     </div>
@@ -121,7 +121,7 @@
                 </div>
             </section>
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Explore the world
@@ -158,7 +158,7 @@
                                         <pclass="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now</a>
+                                    <a href="#popup" class="btn btn--white">Book now</a>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +192,7 @@
                                         <pclass="card__price-only">Only</p>
                                         <p class="card__price-value">$559</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now</a>
+                                    <a href="#popup" class="btn btn--white">Book now</a>
                                 </div>
                             </div>
                         </div>
@@ -226,7 +226,7 @@
                                         <pclass="card__price-only">Only</p>
                                         <p class="card__price-value">$699</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book now</a>
+                                    <a href="#popup" class="btn btn--white">Book now</a>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +347,7 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo">
+                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" class="footer__logo">
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -369,6 +369,24 @@
                 </div>
             </div>            
         </footer>
+
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img">
+                    <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img">
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a> 
+                    <h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>   
+                    <h3 class="heading-tertiary u-margin-bottom-small">Important &dash; Please read these terms before booking.</h3>
+                    <p class="popup__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fnec bibendum dui pellentesque. Quisque rutrum enim convallis efficitur gravida. Donec luctus dignissim dui eget condimentum. Vestibulum ultrices elit in elit mattis, ac aliquam leo suscipit. Vivamus eu elit non enim molestie consequat. Nulla quis fringilla nunc. Suspendisse tempus risus dui, non ullamcorper mauris suscipit dapibus. Vestibulum nisl dolor, fermentum eu facilisis nec, accumsan at enim.
+                    </p>
+                    <a href="#" class="btn btn--green">Book now</a>
+                </div>
+            </div>
+        </div>
 
        <!-- <section class="grid-test">
            <div class="row">
