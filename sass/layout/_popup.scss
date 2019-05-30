@@ -11,6 +11,15 @@
     visibility: hidden;
     transition: all .4s;
 
+
+
+    @supports (-webkit-backdrop-filter: blur(1rem)) or (backdrop-filter: blur(1rem)){
+        -webkit-backdrop-filter: blur(1rem);
+        backdrop-filter: blur(1rem);
+        background-color: rgba($color-black, .3);
+    }
+
+
     &__close{
         &:link,
         &:visited{
